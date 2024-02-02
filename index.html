@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>namaste react</title>
+</head>
+<body>
+    <div id="root">
+      <h1>akshay is here</h1>
+      <!-- if div is the root element where react code will render then react will replace the content inside the div with its content send through render via root -->
+      <!-- so the contents will be replaced and not appended by react -->
+    </div>
+    
+
+ 
+ 
+<!-- 
+    <script type="module" >
+      const heading =   document.createElement("h1");
+      heading.innerHTML="hello word";
+      const main=document.getElementById("root");
+      main.appendChild(heading);
+    </script>
+
+
+ -->
+
+
+
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+ <!-- <script>
+ const heading = React.createElement("h1", {} , "hello world from react");
+ //what is the root? where you need to render stuff up?
+ // i need to render my heading inside the root
+ // react needs a root where it does all its DOM stuff
+ // what element will i crreate root in?
+ // the div having id root
+
+ //create root is a reactdom functionality
+
+ const root = ReactDOM.createRoot(document.getElementById("root"));
+// now what ever we do or react does in the root can be rendered inside our element
+// root is the place where all the react code will run
+// everything we will render we render inside these root
+
+  root.render(heading);
+
+--
+ </script>
+-->
+
+ <!-- we have created the react file and now we will inject it inside our html pagerr -->
+<script src="./App.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--
+    NOTE:=> WE CALL REACT AS A LIBRARY
+ LIBRARY & FRAMEWORK(DIFF)
+ we call react as a library because react can be applied to a small portion of a page
+ ex_ (react can workon footer,header,sidebar) any where 
+ // it will work only at that place where you make your root as
+
+ // so react can work indipendently on your app as well
+
+ // it is not a full fledged frame works
+
+//a frame works is a framework which comes with all loads of things
+//where as react is a barebone minimal js library it s just some piece of js code written by facebook developers
+
+-->
